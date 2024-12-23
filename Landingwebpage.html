@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthophile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media.istockphoto.com/id/169977992/photo/yellow-tulips.jpg?s=612x612&w=0&k=20&c=0XGWY6p0HRlp_dAAB_eFmuXUQGcz9mVZHp5LHrNeLig=');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #5c7d56;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        nav a svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+            vertical-align: middle;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-bar input {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        .search-bar svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+            cursor: pointer;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+        }
+
+        .clickable-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .clickable-item {
+            text-align: center;
+            background: white;
+            color: #4c5b5c;
+            border-radius: 8px;
+            padding: 20px;
+            width: 200px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .clickable-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .clickable-item img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #4c5b5c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #a5d6a7;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anthophile</h1>
+        <nav>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                </svg> Home
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M7 4h-2l-2 14h18l-2-14h-2v-2h-8v2zm0 4h10v8H7V8z"/>
+                </svg> Buy
+            </a>
+            <a href="#">Schedule</a>
+            <a href="#">Fertilisers</a>
+            <a href="#">About us</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Know the plant">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27a6.471 6.471 0 001.48-5.34C15.4 5.02 12.98 3 10 3S4.6 5.02 4.1 8.39c-.05.36-.1.73-.1 1.11 0 3.31 2.69 6 6 6 1.35 0 2.61-.45 3.62-1.21l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-5.5 0C8.01 14 6 11.99 6 9.5S8.01 5 10 5s4 2.01 4 4.5S11.99 14 10 14z"/>
+            </svg>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Know the plant you wanna live with.</h2>
+    </section>
+
+    <section class="clickable-section">
+        <div class="clickable-item" onclick="location.href='https://example.com/monstera';">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO64IXAQ1Zf_1ZiCHKWAwsZDIsmXZP89S6Jg&s" alt="Monstera">
+            <h3>Monstera</h3>
+            <p>Learn about this tropical beauty.</p>
+        </div>
+        <div class="clickable-item" onclick="location.href='https://example.com/rose';">
+            <img src="https://w0.peakpx.com/wallpaper/240/769/HD-wallpaper-%E2%9D%A4%EF%B8%8F-roses-flowers-nature-red-thumbnail.jpg" alt="Rose">
+            <h3>Rose</h3>
+            <p>The queen of flowers.</p>
+        </div>
+        <div class="clickable-item" onclick="location.href='https://example.com/tulip';">
+            <img src="https://arabianpetals.ae/cdn/shop/articles/tulip-flower.jpg?v=1600976258" alt="Tulip">
+            <h3>Tulip</h3>
+            <p>A springtime favorite.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Anthophile. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
